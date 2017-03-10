@@ -22,13 +22,6 @@ ActiveRecord::Schema.define(version: 20170310212943) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "profiles", force: :cascade do |t|
-    t.text     "blurb"
-    t.integer  "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "pros", force: :cascade do |t|
     t.string   "string"
     t.integer  "point"

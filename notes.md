@@ -1,0 +1,2 @@
+- sessions & password
+- html in views
