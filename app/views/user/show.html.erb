@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta charset="utf-8">
+    <title>User Show (profile-page)</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>User Show (profile-page)</h1>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Pro</th>
+            <th>Con</th>
+            <th>Action</th>
+          </tr>
+          <tr>
+            <td><input class="form-control pro-input"></td>
+            <td><input class="form-control con-input"></td>
+            <td><button class="btn btn-primary add-blog">Add</button></td>
+          </tr>
+        </thead>
+        <tbody class="blogs-list"></tbody>
+      </table>
+    </div>
+
+    <script type="text/template" class="blogs-list-template">
+      <td><span class="pro"><%= pro %></span></td>
+      <td><span class="con"><%= con %></span></td>
+      <td><button class="btn btn-warning edit-blog">Edit</button>
+          <button class="btn btn-danger delete-blog">Delete</button>
+          <button class="btn btn-success update-blog" style="display:none">Update</button>
+          <button class="btn btn-danger cancel" style="display:none">Cancel</button></td>
+    </script>
+
+    <script src="bower_components/underscore/underscore.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/backbone/backbone.js"></script>
+    <script src="assets/javascripts/scripts.js"></script>
+
+  </body>
+</html>
