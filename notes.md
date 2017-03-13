@@ -1,11 +1,13 @@
 - sessions & password
 
 - backbone.js to:
-      - add, delete, edit pros and cons.
-      - show all pros and cons under Question
+      - Pros/Cons table:
+        - add, edit, delete pro/con
+        -
 
       - go through and set it up for just pros.
       - then go back and set it up for cons. (going to be the same functions, just new variables)
+      - edit User#show to have two tables (Pros & Cons)
 
 - Pages needed:
   - Log-in
